@@ -1,0 +1,107 @@
+/* General styling for the contact page */
+.contact-container {
+    position: relative;
+    display: flex; /* Switch to flexbox for better centering */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+/* Styling individual cards */
+.contact-card {
+    background-color: #f9f9f9;
+    /* background-color: #fff; */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Flexible width */
+    max-width: 300px; /* Limit maximum width */
+    min-height: 250px; /* Consistent height */
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contact-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+.contact-card h2 {
+    font-family: 'Spectral', serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.contact-card p, .contact-card a {
+    margin: 0; /* Remove any browser-applied margins */
+    display: block; /* Ensure both behave as block-level elements */
+    text-align: center; /* Center-align text */
+}
+
+.contact-text {
+    font-size: 1rem;
+    color: #555; /* Lighter gray for less visible text */
+    margin-top: 0.5rem;
+}
+
+.contact-link, .email {
+    font-family: 'Spectral', serif;
+    font-size: 1.25rem; /* Match heading size */
+    font-weight: bold;
+    color: black;
+    text-decoration: underline; /* Add underline */
+    background-color: transparent; /* Remove button-like appearance */
+    padding: 0; /* Remove padding */
+    border-radius: 0; /* Remove rounded edges */
+    margin-top: 0.5rem; /* Keep some spacing */
+}
+
+.contact-link:hover, .email:hover {
+    color: #333; /* Slightly darker shade on hover */
+    text-decoration: none; /* Remove underline on hover for subtle effect */
+}
+
+
+/* Responsive layout adjustments */
+@media (min-width: 1024px) {
+    .contact-container {
+        flex-wrap: nowrap; /* Prevent wrapping on larger screens */
+    }
+
+    .primary-header {
+        margin-bottom: 7%;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .contact-container {
+        flex-wrap: wrap; /* Allow two cards per row */
+    }
+
+    .primary-header {
+        margin-bottom: 20%;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .contact-container {
+        flex-wrap: wrap; /* Stack cards vertically */
+    }
+    
+}
