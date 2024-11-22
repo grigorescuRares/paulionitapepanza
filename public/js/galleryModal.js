@@ -121,13 +121,12 @@ export function initModal() {
         if (!isZoomed) {
             modalImage.style.cursor = 'zoom-out';
             modalImage.style.transition = 'transform 0.3s ease-in-out';
-            modalImage.style.transform = 'scale(1.2)'; // Zoom in slightly
+            modalImage.style.transform = 'scale(1.35)'; // Zoom in slightly
             modalImage.style.transformOrigin = `${(x / bounds.width) * 100}% ${(y / bounds.height) * 100}%`; // Zoom based on current cursor position
             isZoomed = true;
         } else {
             modalImage.style.cursor = 'zoom-in';
             modalImage.style.transform = 'scale(1)'; // Reset image to original size
-            modalImage.style.transformOrigin = 'center center'; // Reset to center on zoom out
             isZoomed = false;
         }
     });
