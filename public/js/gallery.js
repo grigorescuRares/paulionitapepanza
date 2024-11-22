@@ -37,8 +37,11 @@ document.addEventListener('DOMContentLoaded', () => {
         gallery.classList.remove('hidden');
         gallery.classList.add('fade-in');
 
-        mobileGallery.classList.remove('hidden');
-        mobileGallery.classList.add('fade-in');
+        // Apply the fade-in effect to each mobile gallery carousel
+        mobileGallery.forEach(carousel => {
+            carousel.classList.remove('hidden');
+            carousel.classList.add('fade-in');
+        });
     });
     
     
