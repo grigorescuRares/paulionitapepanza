@@ -200,7 +200,7 @@ body {
     .image-container{
         width: clamp(224px, 70vw, 300px);
         margin-inline: auto;
-        margin-top: clamp(2rem, 25vh + .05rem, 4rem);
+        margin-top: clamp(.7rem, 20vh + .05rem, 1rem);
         top: 0;
     }
  
@@ -219,7 +219,7 @@ body {
         border: 0;
         background-size: cover;
 
-        margin-top: clamp(5rem, 50vh + .05rem, 8rem);
+        margin-top: clamp(5rem, 40vh + .05rem, 6rem);
         width: clamp(7rem, 10vw, 10rem);
         height: clamp(2rem, 10vw, 2.2rem);
         top: 50%;
@@ -236,7 +236,7 @@ body {
     .name {
         font-size: clamp(2rem, 10vw, 30rem);
         margin-top: 25vh;
-        margin-bottom: clamp(4rem, 20vh, 6rem);
+        margin-bottom: clamp(2rem, 20vh, 4rem);
         position: absolute;
         bottom: 0;
     }

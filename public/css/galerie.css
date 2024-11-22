@@ -84,6 +84,22 @@ p {
     transition: opacity 2s cubic-bezier(0.98, 0.2, 0.22, 0.95); /* Smooth fade-in transition */
 }
 
+.swiper.hidden {
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+.swiper.fade-in {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 2s cubic-bezier(0.98, 0.2, 0.22, 0.95); 
+}
+
+:root {
+    --swiper-theme-color: black;
+}
+
 
 /* Modal Overlay */
 .modal-overlay {
