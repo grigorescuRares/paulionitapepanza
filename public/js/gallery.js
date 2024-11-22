@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Wait for the animation on the title to finish, then show the gallery with a fade-in effect
     document.querySelector('h1').addEventListener('animationend', function () {
         const gallery = document.querySelector('.gallery-container');
-        const mobileGallery = document.querySelector('.swiper');
+        const mobileGallery = document.querySelectorAll('#vertical-carousel, #horizontal-carousel, #square-carousel');
         // Remove the hidden class and trigger the fade-in
         gallery.classList.remove('hidden');
         gallery.classList.add('fade-in');

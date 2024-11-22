@@ -109,6 +109,10 @@ body {
     .gallery-link {
         pointer-events: none;
     }
+    
+    .image-container {
+        pointer-events: none;
+    }
 
     .navbar {
         --gap:2em;
@@ -138,6 +142,7 @@ body {
     .mobile-nav-toggle {
         font-family: 'Spectral', serif;
         font-size: clamp(0.5rem, 10vw, 0.8rem);
+        color: black;
         font-weight: 500;
     
         background-color: hsl(0 0% 80% / 0.4);
